@@ -1,0 +1,58 @@
+# REDUX TUTORIAL
+nội dung
+I. 1 số lưu ý QUAN TRỌNG trước khi bắt đầu tìm hiểu Redux
+II. Redux là j
+III. vì sao nên sử dụng Redux? và Redux Toolkid nói riêng
+IV. khi nào nên sử dụng Redux?
+V. kiến trúc của Redux và các khái niệm cần nắm
+VI. xây dựng ứng dụng Todo App bằng: 
+React + Redux Core
+React + Redux Toolkit
+
+I. 1 số lưu ý QUAN TRỌNG trước khi bắt đầu tìm hiểu Redux
+- HTML & CSS
+- cú pháp và tính năng ES6
+- kiến thức về React: Props, State, Functional Component, React Hooks
+- Bất đồng bộ trong javaScript (Async trong js) 
+
+- Redux Toolkit bản chất cũng là Redux
+II. Redux là j
+- Redux là 1 PATTERN (khuân mẫu)
+- là 1 thư viện JS dùng để quản lý và cập nhật state của ứng dụng
+III. vì sao nên sử dụng Redux? và Redux Toolkid nói riêng
+- quản lý Global state
+- các components tại mọi nơi trong ứng dụng có thể truy xuất và cập nhật
+- giải quyết vấn đề của React khi muốn truyền dữ liệu vào các cấp con cháu
+- dễ dang debug
+- xử lý caching dữ liệu từ Server
+
+* vì sao phải sử dụng Redux Toolkit?
+- sinh ra để giải quyết vấn đề đối với Redux Core
+- việc cấu hình (config) Redux phức tạp
+- phải cài đặt thủ công nhiều packages để Redux có thể hoạt động hiệu quả
+- Redux yêu cầu rất nhiều boilerplate code
+IV. khi nào nên sử dụng Redux?
+Redux sẽ rất hữu dụng đối với các trường hợp sau đây:
+- dự án có số lượng lớn state và các state được sử dụng ở nhiều nơi
+- state được cập nhật thường xuyên
+- logic cập nhật state phức tạp
+- ứng dụng có số lượng code trung bình hoặc lớn và có nhiều người làm chung
+- cần debug và muốn xem cách state được cập nhật tại bất kỳ khoảng thời gian nào
+ 
+ * không phải lúc nào cũng nên sử dụng redux
+V. kiến trúc của Redux và các khái niệm cần nắm
+- State Management: quản lý các dữ liệu, trạng thái của ứng dụng 
+- Immutability (bất biến): Để đạt được immutability trong Javascript, 
+  người lập trình có thể sử dụng các kỹ thuật như clone (sao chép) và spread operator (toán tử spread). 
+  Clone là quá trình tạo ra một bản sao của đối tượng ban đầu, trong đó giá trị của đối tượng mới được đảm bảo không thay đổi.
+  Spread operator, được kí hiệu bằng dấu ba chấm "..." cho phép sao chép các giá trị của một mảng hoặc đối tượng 
+  sang một mảng hoặc đối tượng khác, trong đó các giá trị được sao chép cũng được đảm bảo không thay đổi.
+  Sử dụng immutability trong Javascript có thể giúp giảm thiểu các lỗi liên quan đến thay đổi dữ liệu không đồng bộ, giúp tăng tính đáng tin cậy và dễ bảo trì của các ứng dụng Javascript.
+
+* kiến trúc Redux
+ - Store
+    + Reducer
+    + State
+ - Actions
+ - Dispatch
+  
